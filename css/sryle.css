@@ -1,0 +1,337 @@
+body{
+    font-family: 'Hind Madurai',Arial, Helvetica, sans-serif;
+    background-color: #0E1216;
+}
+::selection{
+    background-color: #beaca0;
+    color: #fff;
+}
+.navbar-brand{
+    font-family: 'Abril Fatface',sans-serif;
+  letter-spacing: .5rem;
+  font-size: 30px;
+}
+.navbar-brand span{
+    color:#beaca0 ;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header .navbar{
+    padding: 0;
+}
+.scrolled{
+    display: none;
+    
+}
+header .row,
+header .col-6{
+    padding: 0;
+}
+header .row div:first-of-type{
+    background-color: #0E1216;
+    height:100vh;
+}
+header .row div:last-of-type{
+    background-color: #c1b7b1;
+    height:100vh;
+}
+header img{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 300px;
+-moz-animation:wave 2s linear infinite;
+-webkit-animation:wave 2s linear infinite;
+animation: wave 2.4s linear infinite;
+}
+
+header .text{
+right: 0%;
+    top: 25%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    gap: 40px;
+    color: #fff;
+    font-size: 23px;
+}
+@media (max-width:767px) {
+    header img{
+        width: 220px;
+    } 
+}
+@media (max-width:490px) {
+    header img{
+        width: 150px;
+    } 
+    header .text{
+            font-size: 18px;
+        }
+}
+header .text div{
+   position: relative;
+   transition: transform .2s;
+}
+ a{
+   text-decoration: none;
+   color: #fff;
+ }
+ header .text a:hover{
+     color: #0E1216;
+ }
+header .text div::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    right: 30px;
+    width: 3px;
+    height: 100%;
+}
+@media (max-width:490px) {
+    header .text div::before{
+        width: 2px;
+    }
+}
+header .text div:hover{
+    transform: translateX(4px);
+}
+/* end header */
+/* start about us */
+.about{
+    position: relative;
+}
+.about .container{
+    padding: 180px 0;
+    margin: auto;
+    width: 70%;
+}
+@media (max-width:490px) {
+    .about .container{
+        width: 90%;
+    }
+}
+.about h2{
+    position: absolute;
+    color: #fff;
+    top: 80px;
+    font-family: 'Abril Fatface',sans-serif;
+    letter-spacing: .2rem;
+    font-weight: normal;
+}
+.about .card{
+    position: relative;
+}
+.about .container .card::before{
+position: absolute;
+content: "";
+top: -41px;
+width: 90%;
+left: -40px;
+height: 40px;
+background-color: #beaca0;
+}
+.about .container .card::after{
+    position: absolute;
+    content: "";
+    left: -41px;
+    width: 40px;
+    top: -40px;
+    height: 90%;
+    background-color: #beaca0;
+    }
+    .about .btn{
+        background-color: #beaca0;
+        color: #fff;
+    }
+    .card-title{
+        font-size: 21px;
+        font-family: 'Abril Fatface',sans-serif;
+        font-weight: normal;
+        letter-spacing: .1rem;
+        }
+        .card-text{
+            color: #777;
+        }
+/* end about us */
+/* start collection */
+.collection h2{
+color: #fff;
+font-family: 'Abril Fatface',sans-serif;
+letter-spacing: .2rem;
+position: relative;
+}
+.collection h2::before{
+position: absolute;
+content: "";
+left: -10px;
+width: 3px;
+height: 100%;
+background-color: #beaca0;
+}
+.collection .options{
+gap: 20px;
+width: 170px;
+margin: auto;
+margin:20px  auto 30px;
+}
+.collection .options span a{
+    opacity: .7;
+    color: rgba(221, 221, 221, 0.829);
+}
+.carousel{
+    width: 90%;
+    margin:100px auto;
+}
+
+.classic{
+    display: flex;
+}
+.options span a.active,
+.options span a:hover{
+    color: #fff;
+    opacity: 1;
+}
+.carousel-item {
+    gap: 3% ;
+}
+.carousel-item  .card {
+width: 315px;
+    margin: 2% auto;
+    padding: 0 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+@media (max-width:1000px) {
+    .carousel-item  .card {
+        width: 370px;
+        }
+}
+
+
+.carousel-item  .card::after{
+    position: absolute;
+    content: "";
+    right: -11px;
+    width: 10px;
+    top: 15px;
+    height: 90%;
+    background-color: #beaca0;
+    border-radius: 0px 6px 6px 0px;
+}
+.carousel-item  .card img{
+width: 100%;
+height: 300px;
+margin:20px auto;
+transition: transform .3s;
+}
+.carousel-item  .card img:hover{
+    transform: scale(1.1);
+}
+.card-body {
+    margin: 10px 0;
+}
+.card-body h4{
+    color: darkred;
+    font-size: 22px;
+}
+.card-body div.d-flex:last-of-type{
+    margin: 20px auto 10px;
+}
+.card-body div.d-flex:last-of-type a{
+    margin: 0 10px;
+    width: 120px;
+}
+/* end collection */
+/* start my card */
+.mycard{
+    padding:20px 0 ;
+    width: 90%;
+    margin:100px auto;
+    background-color: #fafafa;
+}
+.mycard h2{
+    text-align: center;
+    font-family: 'Abril Fatface',sans-serif;
+    letter-spacing: .2rem;
+    position: relative;
+    width: fit-content;
+    margin:10px auto 40px ;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .6s;
+}
+.mycard h2:hover{
+background-color: #beaca0;
+transition-delay: .3s;
+color: #fff;
+}
+.mycard h2::after,
+.mycard h2::before{
+position: absolute;
+content: "";
+top: 50%;
+transform: translateY(-50%);
+background-color: #c4b7af;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+transition: .6s;
+}
+.mycard h2::after{
+    left: -30px;
+}
+.mycard h2::before{
+    right: -30px;
+}
+.mycard h2:hover::after{
+left: 0px;
+background-color: transparent;
+}
+.mycard h2:hover::before{
+    right: 0px;
+    background-color: transparent;
+}
+.mycard .container .styleLi{
+background-color: #beaca0;
+margin: 10px auto;
+list-style: none;
+padding: 20px 10px;
+font-weight: bold;
+border: 1px solid #fff;
+}
+.mycard .container .ineerCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0;
+    position: relative;
+}
+.mycard .container  ul{
+    padding: 0 20px;
+}
+.mycard .container .ineerCont span{
+    padding: 0 4px;
+}
+.mycard .container .ineerCont img{
+    padding-right: 20px;
+width: 60px;
+}
+.mycard .container .ineerCont .x{
+position: absolute;
+right: 0px;
+top: -15px;
+color: darkred;
+font-size: 20px;
+cursor: pointer;
+}
+
+/* animation  */
+@keyframes wave{
+    0%{transform: translate(-50%,-50%);}
+    50%{transform:translate(-50%,-54%);}
+   100%{transform: translate(-50%,-50%);}
+}
